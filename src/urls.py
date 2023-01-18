@@ -10,5 +10,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('authentication/login/', TokenObtainPairView.as_view()),
     path('authentication/refresh-token/', TokenRefreshView.as_view()),
+    path('api/clients/', ClientQueryset.as_view(), name='client-list'),
+    path('api/creer-client/', ClientCreer.as_view(), name='client-creation'),
+    path('api/clients', ClientFiltre.as_view(), name='client-filtre'),
+    path('api/clients/<int:pk>/', ClientCorrectif.as_view(), name='client-maj'),
 
 ]
