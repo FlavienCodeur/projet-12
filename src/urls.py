@@ -18,5 +18,9 @@ urlpatterns = [
     path('api/creer-contrat/', ContratCreer.as_view(), name='contrat-creer'),
     path('api/contrats', ContratFiltre.as_view(), name='contrat-filtre'),
     path('api/contrats/<int:pk>/', ContratCorrectif.as_view(), name='contract-maj'),
+    path('api/evenement/', EvenementListes.as_view(), name='evenement-liste'),
+    path('api/creer-evenement/', EvenementCreer.as_view(), name='evenement-creation'),
+    path('api/evenement', EvenementFiltre.as_view(), name='evenement-filtre'),
+    path('api/evenement/<int:pk>/', EvenementCorrectif.as_view(), name='evenement-maj'),
 
 ]
