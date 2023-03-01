@@ -26,3 +26,5 @@ L'application peut etre gere à la fois sur postman et sur le django Admin .
 Vous noterez que vous devrez faire une base de donnees postgresql ce tuto m'a permis de l'implementer : https://www.youtube.com/watch?v=unFGJhIvHU4
 
 Voici la documentation postman : https://documenter.getpostman.com/view/19745824/2s8Z6saFFk
+
+Status fini
